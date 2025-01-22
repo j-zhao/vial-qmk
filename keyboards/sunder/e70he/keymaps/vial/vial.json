@@ -4,6 +4,138 @@
         "rows": 6,
         "cols": 13
     },
+    "customKeycodes": [
+      {
+        "name": "LS U",
+        "title": "Gamepad Left Stick Up",
+        "shortName": "GC_LSU"
+      },
+      {
+        "name": "LS D",
+        "title": "Gamepad Left Stick Down",
+        "shortName": "GC_LSD"
+      },
+      {
+        "name": "LS L",
+        "title": "Gamepad Left Stick Left",
+        "shortName": "GC_LSL"
+      },
+      {
+        "name": "LS R",
+        "title": "Gamepad Left Stick Right",
+        "shortName": "GC_LSR"
+      },
+      {
+        "name": "RS U",
+        "title": "Gamepad Right Stick Up",
+        "shortName": "GC_RSU"
+      },
+      {
+        "name": "RS D",
+        "title": "Gamepad Right Stick Down",
+        "shortName": "GC_RSD"
+      },
+      {
+        "name": "RS L",
+        "title": "Gamepad Right Stick Left",
+        "shortName": "GC_RSL"
+      },
+      {
+        "name": "RS R",
+        "title": "Gamepad Right Stick Right",
+        "shortName": "GC_RSR"
+      },
+      {
+        "name": "DP U",
+        "title": "Gamepad Digital Up",
+        "shortName": "GC_DPU"
+      },
+      {
+        "name": "DP D",
+        "title": "Gamepad Digital Down",
+        "shortName": "GC_DPD"
+      },
+      {
+        "name": "DP L",
+        "title": "Gamepad Digital Left",
+        "shortName": "GC_DPL"
+      },
+      {
+        "name": "DP R",
+        "title": "Gamepad Digital Right",
+        "shortName": "GC_DPR"
+      },
+      {
+        "name": "Square",
+        "title": "Gamepad Square",
+        "shortName": "GC_SQU"
+      },
+      {
+        "name": "Cross",
+        "title": "Gamepad Cross",
+        "shortName": "GC_CRO"
+      },
+      {
+        "name": "Circle",
+        "title": "Gamepad Circle",
+        "shortName": "GC_CIR"
+      },
+      {
+        "name": "Triangle",
+        "title": "Gamepad Triangle",
+        "shortName": "GC_TRI"
+      },
+      {
+        "name": "L1",
+        "title": "Gamepad L1",
+        "shortName": "GC_L1"
+      },
+      {
+        "name": "L2",
+        "title": "Gamepad L2",
+        "shortName": "GC_L2"
+      },
+      {
+        "name": "L3",
+        "title": "Gamepad L3",
+        "shortName": "GC_L3"
+      },
+      {
+        "name": "R1",
+        "title": "Gamepad R1",
+        "shortName": "GC_R1"
+      },
+      {
+        "name": "R2",
+        "title": "Gamepad R2",
+        "shortName": "GC_R2"
+      },
+      {
+        "name": "R3",
+        "title": "Gamepad R3",
+        "shortName": "GC_R3"
+      },
+      {
+        "name": "Start",
+        "title": "Gamepad Start",
+        "shortName": "GC_STA"
+      },
+      {
+        "name": "Select",
+        "title": "Gamepad Select",
+        "shortName": "GC_SEL"
+      },
+      {
+        "name": "Share",
+        "title": "Gamepad Share",
+        "shortName": "GC_SHA"
+      },
+      {
+        "name": "GC Home",
+        "title": "Gamepad Home",
+        "shortName": "GC_HOM"
+      }
+   ],
     "layouts": {
         "keymap": [
           [
