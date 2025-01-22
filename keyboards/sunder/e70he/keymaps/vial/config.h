@@ -6,3 +6,16 @@
 #define VIAL_KEYBOARD_UID {0x89, 0xDD, 0x14, 0x23, 0x29, 0x3A, 0xB7, 0x4B}
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 4 }
 #define VIAL_UNLOCK_COMBO_COLS { 3, 3 } // top left & enter
+
+// 1000hz Polling Rate
+#define USB_POLLING_INTERVAL_MS 1
+#define QMK_KEYS_PER_SCAN 12
+
+// Joystick Button Count
+#define JOYSTICK_BUTTON_COUNT 32
+
+// Joystick Axes Count
+#define JOYSTICK_AXIS_COUNT 6
+
+// Joystick Axes Resolution
+#define JOYSTICK_AXIS_RESOLUTION 8

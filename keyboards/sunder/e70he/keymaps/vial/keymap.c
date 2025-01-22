@@ -3,8 +3,49 @@
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
     _BASE,
-    _FN
+    _FN,
+    _GAMEPAD
 };
+
+enum custom_keycodes {
+    GC_LSU = SAFE_RANGE,
+    GC_LSD,
+    GC_LSL,
+    GC_LSR,
+    GC_RSU,
+    GC_RSD,
+    GC_RSL,
+    GC_RSR,
+    GC_DPU,
+    GC_DPD,
+    GC_DPL,
+    GC_DPR,
+    GC_SQU,
+    GC_CRO,
+    GC_CIR,
+    GC_TRI,
+    GC_L1,
+    GC_L2,
+    GC_L3,
+    GC_R1,
+    GC_R2,
+    GC_R3,
+    GC_STA,
+    GC_SEL,
+    GC_HOM
+};
+
+// Joystick Config
+joystick_config_t joystick_axes[JOYSTICK_AXIS_COUNT] = {
+    JOYSTICK_AXIS_VIRTUAL,
+    JOYSTICK_AXIS_VIRTUAL,
+    JOYSTICK_AXIS_VIRTUAL,
+    JOYSTICK_AXIS_VIRTUAL,
+    JOYSTICK_AXIS_VIRTUAL,
+    JOYSTICK_AXIS_VIRTUAL,
+};
+
+// #define GAMEPAD TG(_GAMEPAD)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT(
@@ -23,5 +64,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            \
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,            \
         KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_TRNS, KC_NO,   KC_NO,   KC_NO,   KC_NO    \
+    ),
+
+    [_GAMEPAD] = LAYOUT(
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,                              \
+        KC_NO,   GC_DPU,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   GC_DPL,  GC_DPD,  GC_DPR,  KC_NO,                     \
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   GC_L3,            \
+        KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   GC_HOM,  GC_SEL,  GC_STA,  KC_NO,   GC_SQU,  GC_TRI,  GC_R1,            \
+        GC_L1,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   GC_CRO,  GC_CIR,  GC_R2,   GC_L2,   KC_NO,   KC_NO,   KC_NO,            \
+        GC_R3,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   GC_DPU,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO    \
     ),
 };
